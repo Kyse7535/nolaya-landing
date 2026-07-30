@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="dark" lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Merci — Nolaya</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ffb68b",
+                        "primary-container": "#d98e5f",
+                        "on-primary-container": "#5b2801",
+                        secondary: "#e6c183",
+                        background: "#111316",
+                        "on-background": "#e2e2e6",
+                        "on-surface": "#e2e2e6",
+                        "on-surface-variant": "#d8c2b7",
+                        "surface-container-low": "#1a1c1f",
+                        outline: "#a08d83"
+                    },
+                    fontFamily: {
+                        display: ["Libre Caslon Text", "serif"],
+                        body: ["Hanken Grotesk", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col items-center justify-center px-6 antialiased">
+    <div class="max-w-lg w-full text-center flex flex-col gap-8">
+        <div class="flex items-center justify-center gap-2 text-primary">
+            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+            <span class="font-display text-2xl tracking-tight">Nolaya</span>
+        </div>
+        <div class="w-16 h-16 mx-auto rounded-full bg-primary-container/20 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-3xl">check_circle</span>
+        </div>
+        <div class="space-y-4">
+            <h1 class="font-display text-3xl md:text-4xl text-primary tracking-tight">Merci pour votre message</h1>
+            <p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                Votre demande a bien été reçue. Nous vous recontacterons bientôt au sujet de l’évolution du projet.
+            </p>
+        </div>
+        <a href="/" class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container font-body font-semibold text-sm tracking-wide px-8 py-4 rounded-lg hover:brightness-110 transition-all mx-auto">
+            Retour à l’accueil
+            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+        </a>
+    </div>
+</body>
+</html>
